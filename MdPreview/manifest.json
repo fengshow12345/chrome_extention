@@ -6,6 +6,7 @@
   "content_scripts": [
     {
       "matches": ["file:///*.md"],
+      "run_at": "document_end",
       "js": ["js/marked.min.js", "js/highlight.pack.js", "js/index.js"],
       "css": ["style/base.css", "style/github.css"]
     }
